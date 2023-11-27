@@ -6,7 +6,7 @@ filepath="./school"
 if [ -e "$filepath" ]; then 
 	echo "school file exists"
 	if [ -s "$filepath" ]; then
-		echo "school file is empty"
+		echo "school file is not empty"
 	else
 		echo "school file is empty"
 	fi
