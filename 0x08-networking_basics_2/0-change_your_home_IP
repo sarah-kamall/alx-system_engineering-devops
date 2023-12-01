@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#change home IP
+cp /etc/hosts ~/temph;
+echo "127.0.0.2		localhost" > ~/temph
+echo "8.8.8.8		facebook.com"> ~/temph
+cp -f ~/temph /etc/hosts
