@@ -1,0 +1,1 @@
+ssh -o StrictHostKeyChecking=no -i ~/.ssh/school ubuntu@100.26.219.238 -y
