@@ -1,5 +1,5 @@
 # install package flask
-package { 'flask':
-  ensure   => '2.1.0',  # Ensures that Flask is installed and the latest version is used
-  provider => 'pip3',    # Specifies pip3 as the provider
+exec { 'install_flask':
+  command => '/usr/bin/pip3 install Flask==2.1.0',
+  unless  => '/usr/bin/pip3 show Flask | grep -q "Version: 2.1.0"',
 }
