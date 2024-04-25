@@ -1,3 +1,4 @@
+# Define a file resource
 file { '/tmp/school':
   ensure  => present,   # Ensure the file exists
   content => 'I love Puppet',   # Content of the file
