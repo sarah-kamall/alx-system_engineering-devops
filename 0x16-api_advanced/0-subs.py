@@ -20,7 +20,7 @@ def number_of_subscribers(subreddit):
     HEADERS = {
         "User-Agent": "Custom"
     }
-    RESPONSE = requests.get(ENDPOINT, headers=HEADERS, )
+    RESPONSE = requests.get(ENDPOINT, headers=HEADERS, allow_redirects=False, )
     if RESPONSE.status_code != 200:
         return 0
     else:
