@@ -14,7 +14,7 @@ def top_ten(subreddit):
         queries the Reddit API and
         returns the top 10 posts
     """
-    ENDPOINT = 'http://www.reddit.com/r/' + subreddit + '/hot.json'
+    ENDPOINT = 'https://www.reddit.com/r/' + subreddit + '/hot.json'
     HEADERS = {
         "User-Agent": "Custom"
     }
