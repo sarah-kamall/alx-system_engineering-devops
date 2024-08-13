@@ -15,7 +15,7 @@ def count_words(subreddit, word_list, after=None, count={}):
         returns the top 10 posts
     """
 
-    ENDPOINT = 'https://www.reddit.com/r/' + subreddit + '/hot.json'
+    ENDPOINT = 'http://www.reddit.com/r/' + subreddit + '/hot.json'
     HEADERS = {
         "User-Agent": "Custom"
     }
